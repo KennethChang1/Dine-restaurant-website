@@ -1,0 +1,60 @@
+header{
+    background-image: url(../images/booking/hero-bg-mobile.jpg);
+    height: 600px;
+}
+
+
+.section{
+    &--booking{
+        color: white;
+        padding-top: 56px;
+    }
+}
+
+.booking-subtitle{
+    margin-bottom: 50px;
+}
+
+.form{
+    position: relative;
+    top: -150px;
+    width: 327px;
+    margin: auto;
+    background-color: white;
+    padding: 32px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-size: 25px;
+
+    & > div{
+        margin-bottom: 32px;
+    }
+
+    &__input{
+        border: none;
+        border-bottom: 1px solid black;
+        width: 100%;
+        padding: 10px;
+        outline: none;
+        font-weight: 300;
+
+        &--small{
+            width: 73px;
+        }
+    }
+
+    &__label{
+        margin-bottom: 5px;
+        font-size: 25px;
+        font-weight: 300;
+    }
+}
+
+.form-container{
+    display: flex;
+    justify-content: space-between;
+
+    &--people{
+        align-items: center;
+        border-bottom: 1px solid black;
+    }
+}

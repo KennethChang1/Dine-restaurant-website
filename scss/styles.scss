@@ -1,4 +1,5 @@
 @import './normalize';
+@import './booking';
 $light-color: white;
 $dark-color: #111111;
 
@@ -142,6 +143,11 @@ h3{
 
     &--black{
         background-color: #111111;
+    }
+
+    &--width{
+        width: 263px;
+        padding: 20px 0;
     }
 }
 

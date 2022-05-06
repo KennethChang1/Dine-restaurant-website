@@ -1,38 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="scss/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;900&display=swap"
+    rel="stylesheet">
+
   <title>Frontend Mentor | Dine Website Challenge</title>
 </head>
+
 <body>
-
-  Reservations
-
-  We can’t wait to host you. If you have any special requirements please feel free to 
-  call on the phone number below. We’ll be happy to accommodate you.
-
-
-
-  Name
-  Email
-  Pick a date
-  Pick a time
-
-  Make Reservation
-
-
-
-  Marthwaite, Sedbergh
-  Cumbria
-  +00 44 123 4567
-
-  Open Times
-  Mon - Fri: 09:00 AM - 10:00 PM
-  Sat - Sun: 09:00 AM - 11:30 PM
-
+  <header class="section section--booking">
+    <div class="container">
+      <img src="images/logo.svg" alt="" class="logo">
+      <h1>Reservations</h1>
+      <p class="section__subtitle booking-subtitle">We can’t wait to host you. If you have any special requirements please feel free to call on the phone number
+        below. We’ll be happy to accommodate you.</p>
+      <a href="#" class="btn">RESERVE PLACE</a>
+    </div>
+  </header>
+  <main>
+    <form action="/" class="form">
+      <div>
+        <input type="text" placeholder="Name" class="form__input">
+      </div>
+      <div>
+        <input type="text" placeholder="Email" class="form__input">
+      </div>
+      <div>
+        <p class="form__label">Pick a date</p>
+        <div class="form-container">
+          <input type="number" placeholder="MM" class="form__input form__input--small">
+          <input type="number" placeholder="DD" class="form__input form__input--small">
+          <input type="number" placeholder="YYYY" class="form__input form__input--small">
+        </div>
+      </div>
+      <div>
+        <p class="form__label">Pick a time</p>
+        <div class="form-container">
+          <input type="number" placeholder="09" class="form__input form__input--small">
+          <input type="number" placeholder="00" class="form__input form__input--small">
+          <select class="form__input form__input--small">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-container form-container--people">
+        <img src="images/icons/icon-minus.svg" alt="">
+        <P>1 people</P>
+        <img src="images/icons/icon-plus.svg" alt="">
+      </div>
+      <input class="btn btn--black btn--width" type="submit" value="MAKE RESERVATION">
+    </form>
+  </main>
 </body>
+
 </html>

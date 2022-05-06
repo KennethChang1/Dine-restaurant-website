@@ -241,6 +241,71 @@ input[type="checkbox"], input[type="radio"] {
           box-sizing: border-box;
 }
 
+header {
+  background-image: url(../images/booking/hero-bg-mobile.jpg);
+  height: 600px;
+}
+
+.section--booking {
+  color: white;
+  padding-top: 56px;
+}
+
+.booking-subtitle {
+  margin-bottom: 50px;
+}
+
+.form {
+  position: relative;
+  top: -150px;
+  width: 327px;
+  margin: auto;
+  background-color: white;
+  padding: 32px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-size: 25px;
+}
+
+.form > div {
+  margin-bottom: 32px;
+}
+
+.form__input {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  font-weight: 300;
+}
+
+.form__input--small {
+  width: 73px;
+}
+
+.form__label {
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-container--people {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid black;
+}
+
 body {
   font-family: 'League Spartan', sans-serif;
 }
@@ -383,6 +448,11 @@ h3 {
 
 .btn--black {
   background-color: #111111;
+}
+
+.btn--width {
+  width: 263px;
+  padding: 20px 0;
 }
 
 .wrapper {
