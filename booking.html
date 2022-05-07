@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;900&display=swap"
     rel="stylesheet">
+  <script src="script.js" defer></script>
 
   <title>Frontend Mentor | Dine Website Challenge</title>
 </head>
@@ -26,26 +27,30 @@
     </div>
   </header>
   <main>
-    <form action="/" class="form">
-      <div>
-        <input type="text" placeholder="Name" class="form__input">
+    <form action="" class="form">
+      <div class="error-container">
+        <input type="text" placeholder="Name" class="form__input" id="name">
+        <p class="error error--off">This field is required</p>
       </div>
       <div>
-        <input type="text" placeholder="Email" class="form__input">
+        <input type="text" placeholder="Email" class="form__input" id="email">
+        <p class="error error--off">This field is required</p>
       </div>
       <div>
         <p class="form__label">Pick a date</p>
+        <p class="error error--off">This field is incomplete</p>
         <div class="form-container">
-          <input type="number" placeholder="MM" class="form__input form__input--small">
-          <input type="number" placeholder="DD" class="form__input form__input--small">
-          <input type="number" placeholder="YYYY" class="form__input form__input--small">
+          <input type="number" placeholder="MM" class="form__input form__input--small date-js">
+          <input type="number" placeholder="DD" class="form__input form__input--small date-js">
+          <input type="number" placeholder="YYYY" class="form__input form__input--small date-js">
         </div>
       </div>
       <div>
         <p class="form__label">Pick a time</p>
+        <p class="error error--off">This field is incomplete</p>
         <div class="form-container">
-          <input type="number" placeholder="09" class="form__input form__input--small">
-          <input type="number" placeholder="00" class="form__input form__input--small">
+          <input type="number" placeholder="09" class="form__input form__input--small time-js">
+          <input type="number" placeholder="00" class="form__input form__input--small time-js">
           <select class="form__input form__input--small">
             <option value="AM">AM</option>
             <option value="PM">PM</option>
@@ -60,6 +65,17 @@
       <input class="btn btn--black btn--width" type="submit" value="MAKE RESERVATION">
     </form>
   </main>
+  <footer class="section footer">
+    <img src="images/logo.svg" alt="" class="logo">
+    <p class="section__subtitle">Marthwaite, Sedbergh<br>
+      Cumbria<br>
+      +00 44 123 4567</p>
+    <div class="time">
+      <p class="section__subtitle">OPEN TIMES</p>
+      <p class="section__subtitle">MON - FRI: 09:00 AM - 10:00 PM</p>
+      <p class="section__subtitle">SAT - SUN: 09:00 AM - 11:30 PM</p>
+    </div>
+  </footer>
 </body>
 
 </html>
